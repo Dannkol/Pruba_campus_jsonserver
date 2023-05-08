@@ -1,0 +1,124 @@
+<nav>
+  <div class="nav">
+    <input type="checkbox" id="nav-check" />
+    <div class="nav-header">
+      <div class="nav-title"><slot></slot></div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+
+    <div class="nav-links">
+      <a id="recluta">Reclutas</a>
+      <a id="team">Team</a>
+      <a id="skill">Skill</a>
+      <a id="modulos_skill">Modulos de skill</a>
+      <a id="trainer">Trainer</a>
+      <a id="evaluacion">Evaluacion</a>
+    </div>
+  </div>
+</nav>
+
+<style>
+  :host {
+    margin: 0px;
+    font-family: "segoe ui";
+  }
+
+  :host .nav {
+    height: 50px;
+    width: 100%;
+    background: rgba(155, 155, 155, 0.35);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    position: relative;
+  }
+
+  :host .nav > .nav-header {
+    display: inline;
+  }
+
+  :host .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 22px;
+    color: #ffffff;
+    padding: 10px 10px 10px 10px;
+  }
+
+  :host .nav > .nav-btn {
+    display: none;
+  }
+
+  :host .nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+  }
+
+  :host .nav > .nav-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  :host .nav > .nav-links > a:hover {
+    background-color: rgba(194, 189, 189, 0.3);
+  }
+
+  :host .nav > #nav-check {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    :host .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    :host .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+
+    :host .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #ffffff;
+    }
+    :host .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background: rgba(155, 155, 155, 0.35);
+        
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    :host .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    :host .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    :host .nav > #nav-check:checked ~ .nav-links {
+      height: auto;
+      overflow-y: auto;
+    }
+  }
+</style>

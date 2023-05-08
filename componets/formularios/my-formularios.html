@@ -1,0 +1,107 @@
+<div class="item" id="reclutas" style="display: none;">
+    <h1>reclutas</h1>
+    <button id="getALL" data-tipo="get" data-name="reclutas">
+        Pedir
+    </button>
+    <form>
+        <input type="text" name="nombre" id="nombre" placeholder="nombre">
+        <input type="number" name="edad" id="edad" placeholder="edad">
+        <input type="tel" name="telefono" id="telefono" placeholder="telefono">
+        <input type="email" name="email" id="email" placeholder="email">
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" placeholder="fecha nacimiento">
+        <input type="number" name="numero_id" id="numero_id" placeholder="numero de CC o TI">
+        <input type="date" name="fecha_ingreso" id="fecha_ingreso" placeholder="fecha ingreso">
+        <select name="team" id="teamId">
+            
+        </select>
+        <button type="submit" id="submit">
+            enviar
+        </button>
+
+        <button type="button" id="menor">Listar menores de edad</button>
+        <button type="button" id="mayores">Listar menores de edad</button>
+    </form>
+
+    <div class="reclutas_divs" style="display: block !important;">
+        
+    </div>
+</div>
+
+<div class="item" id="team" style="display: none;">
+    <h1>team</h1>
+    <form>
+        <select name="team" id="teamId">
+            
+        </select>
+        <button type="submit">
+            enviar
+        </button>
+    </form>
+    <div class="teams_divs" style="display: block !important;">
+        
+    </div>
+</div>
+
+<div class="item" id="trainer" style="display: none;">
+    <h1>trainer</h1>
+</div>
+
+<div class="item" id="modulosskill" style="display: none;">
+    <h1>modulos skill</h1>
+    <form>
+        <select name="modulosskill" id="skillId">
+            
+        </select>
+        <button type="submit">
+            enviar
+        </button>
+    </form>
+    <div class="modulosskill_divs" style="display: block !important;">
+        
+    </div>
+</div>
+
+<div class="item" id="skill" style="display: none;">
+    <h1>skill</h1>
+    <form>
+        <select name="skill" id="skillId">
+            
+        </select>
+        <button type="submit">
+            enviar
+        </button>
+    </form>
+    <div class="skill_divs" style="display: block !important;">
+        
+    </div>
+</div>
+
+<div class="item" id="evaluacion" style="display: none;">
+    <h1>evaluacion</h1>
+</div>
+
+<style>
+h1{
+    color: #ffffff;
+}
+
+.reclutas_divs{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.recluta{
+    background-color: blanchedalmond;
+    width: auto;
+    height: auto;
+    padding: 8px;
+
+}
+
+.recluta h3{
+    color: #000000;
+}
+    
+</style>

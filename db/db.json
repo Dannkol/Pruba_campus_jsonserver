@@ -1,0 +1,111 @@
+{
+  "team": [
+    {
+      "id": 1,
+      "nombre": "Sputnik",
+      "trainerId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "Artemis",
+      "trainerId": 2
+    },
+    {
+      "id": 3,
+      "nombre": "Apolo",
+      "trainerId": 2
+    },
+    {
+      "id": 4,
+      "nombre": "Starship",
+      "trainerId": 1
+    }
+  ],
+  "reclutas": [
+    {
+      "id": 3,
+      "nombre": "Daniel",
+      "edad": "20",
+      "telefono": "126826852",
+      "email": "dadal@correo.com",
+      "fecha_nacimiento": "2002-03-13",
+      "numero_id": "1234566799",
+      "fecha_ingreso": "2023-01-02",
+      "teamId": 1
+    },
+    {
+      "nombre": "sadsa",
+      "edad": "12",
+      "telefono": "1354238",
+      "email": "dasda@dsds.com",
+      "fecha_nacimiento": "2002-03-13",
+      "numero_id": "12354",
+      "fecha_ingreso": "2023-01-31",
+      "teamId": 1,
+      "id": 4
+    },
+    {
+      "nombre": "sadsa",
+      "edad": "12",
+      "telefono": "12315",
+      "email": "dasda@dsds.com",
+      "fecha_nacimiento": "2023-05-01",
+      "numero_id": "51312",
+      "fecha_ingreso": "2023-05-16",
+      "teamId": 4,
+      "id": 5
+    }
+  ],
+  "skill": [
+    {
+      "id": 1,
+      "nombre": "Javascript"
+    },
+    {
+      "id": 2,
+      "nombre": "HTML"
+    },
+    {
+      "id": 3,
+      "nombre": "CSS"
+    }
+  ],
+  "modulosskill": [
+    {
+      "id": 1,
+      "nombre": "desarrollo web",
+      "skillId": 1
+    },
+    {
+      "id": 2,
+      "nombre": "maquetacion web",
+      "skillId": 2
+    },
+    {
+      "id": 3,
+      "nombre": "diseño web",
+      "skillId": 3
+    }
+  ],
+  "evaluacion": [
+    {
+      "modulosskillId": 1,
+      "reclutasId": 3,
+      "nota": "4"
+    }
+  ],
+  "trainer": [
+    {
+      "id": 1,
+      "nombre": "miguel"
+    },
+    {
+      "id": 2,
+      "nombre": "jolver"
+    },
+    {
+      "id": 3,
+      "nombre": "bermel"
+    }
+  ]
+}
